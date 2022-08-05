@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIF Search</title>
+</head>
+
+<body>
+    <h1>GIF Finder (API)</h1>
+    <h2>Select your options</h2>
+    <form action="/search" method="get">
+        <div>
+            <label for="q">Search: </label>
+            <input type="text" name="q" id="q">
+            <label for="limit">How many GIFs do you want? </label>
+            <select id="limit" name="limit">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+            </select>
+            <label for="rating">Rating </label>
+            <select id="rating" name="rating">
+                <option value="g">g</option>
+                <option value="pg">pg</option>
+                <option value="pg13">pg-13</option>
+            </select>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
